@@ -1,0 +1,53 @@
+#导入模块方法
+import math
+print(math.floor(20.38))
+
+#导入math模块中的sqrt函数方法
+from math import sqrt
+print(sqrt(12))
+
+#导入math模块中的所有函数
+from math import *
+print(sin(3.14/2))
+
+print("#####################################################################")
+print('Hello World')
+n = 20
+m = 30
+print("n + m =",n+m)
+a = n*m
+print(a)
+
+aa="*" * 80
+bb=("+ Hello Python -\n+ I love python -")
+cc="/" * 80
+print(aa)
+print(bb)
+print(cc)
+dd = "*" * 80 + "\n+ Hello Python -\n+ I love python -\n" + "/" * 80
+print(dd)
+
+
+#字符串拼接
+print('Let\'s go!. \"一起走天涯"')#如果需要输出单引号和双引号就这样写\是转义字符。
+x="你好\n"
+y="世界"
+print(x + y)
+print(repr(x + y))#如果需要输出原始字符串就要用到repr或者也可以向下面这样写：
+print (r"Hellow\nWorld")
+print(len("aaaaa"))#查看字符串长度
+
+
+print("i ", end="")#直接输出字符串拼接在一行
+print("love ", end="")
+print("you")
+
+x,y,z = 1,2,3#序列解包方式赋值
+print(x,y,z)
+x = y = 20
+print(x,y)
+# -------------------------------------------------------------------------------------
+print("name =","Bill")#输出用空格分隔的多参数值
+print("age =",30)#输出用空格分隔的多参数值
+print("apple" + "," + "orange" + "," + "banana")#使用加号链接字符串
+print("apple","orange","banana",sep="&")#修改多参数值分隔符为（&），然后输出多参数值,sep可以变成任何字符
