@@ -1,0 +1,6 @@
+# for循环打印偶数
+for i in range(0,10,2):
+    print("loop",i)
+# for循环打印基数
+for i in range(0,10,3):
+    print("loop",i)
