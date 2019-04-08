@@ -1,0 +1,19 @@
+x = 1
+while x <= 10:
+    print(x)
+    x+=1
+#------------------------------------------------------
+oldages= 56
+count = 0
+while count<3:
+    guess_age = int(input("请输入您的年龄："))
+    if guess_age == oldages:
+        print("您输入的正确")
+        break
+    elif guess_age > oldages:
+        print("您输入大了")
+    else:
+        print("您输入小了")
+    count +=1
+else:
+    print("您已超过输入次数")
