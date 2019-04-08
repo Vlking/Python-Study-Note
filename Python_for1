@@ -1,0 +1,15 @@
+for i in range(10):
+    print("loop",i)
+# -----------------------------------------------------------------
+oldages= 56
+for i in range(3):
+    guess_age = int(input("请输入您的年龄："))
+    if guess_age == oldages:
+        print("您输入的正确")
+        break
+    elif guess_age > oldages:
+        print("您输入大了")
+    else:
+        print("您输入小了")
+else:
+    print("您已超过输入次数")
