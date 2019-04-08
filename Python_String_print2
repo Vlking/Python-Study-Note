@@ -1,0 +1,42 @@
+#调用函数
+from cmath import sin
+a=-12.147852963
+print(abs(a))#取获取数的绝对值
+print(round(3.6))#获取浮点数取整四舍五入
+print(round(3.4))#获取浮点数取整四舍五入
+
+
+#声明变量方法
+x =20 #声明整数变量
+y =40
+s = "I Love python"  #声明字符串变量
+flag = True #声明布尔类型变量
+u = 30.4 #声明浮点数类型变量
+print(flag)
+print(x +y)
+print(s)
+print(u)
+print(2*5)
+
+x = 1234.56789
+
+print(format(x,'0.2f'))#保留后面2位小数
+print(format(x,'>12.1f'))#保留后面1位小数
+print(format(x,'>12.3f'))#保留后面3位小数
+print(format(x,'>12.3f'),20)#保留后面3位小数,紧接着输出20
+print(format(x,'0>12.1f'))#12个字符长度右对齐保留小数点后1位，数字后面补0
+print(format(x,','))#每千位用逗号分隔
+print(format(x,',.2f'))#每千位用逗号分隔,保留小数点后两位
+
+
+#获取用户输入
+＃控制台输入，然后在控制台进行打印
+
+#import getpass如果输入密码就需要调用函数
+name = str(input("请输入你的名字："))
+# password = getpass.getpass("请输入您的密码：")这个是密文方式写法
+age = int(input("请输入你的年龄："))
+salary = float(input("请输入你的收入："))
+print("姓名：",name)
+print("年龄：",age)
+print("收入：",salary)
