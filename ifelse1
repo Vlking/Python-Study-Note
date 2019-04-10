@@ -1,0 +1,8 @@
+_username ='aa'  #初始账号
+_passwords ='aa' #初始密码
+username = str(input("请输入您的名字："))
+passwords = input("请输入您的密码：")
+if _username == username and _passwords == passwords:
+    print("ok!")
+else:
+    print("no!")
