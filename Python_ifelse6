@@ -1,0 +1,9 @@
+name = str(input("请输入您的名字："))
+if name.startswith("B"):
+    print("名字以B开头")
+elif name.startswith("F"):
+    print("名字以F开头")
+elif name.startswith("T"):
+    print("名字以T开头")
+else:
+    print("名字以其他字母开头")
