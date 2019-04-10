@@ -1,0 +1,6 @@
+n = 4
+if n == 3:
+    print("n == 3")
+else:
+    print("n等于其他值")
+print("if代码块结束")
