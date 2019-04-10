@@ -6,3 +6,4 @@ elif guess_age > oldages:
     print("您输入大了")
 else:
     print("您输入小了")
+
