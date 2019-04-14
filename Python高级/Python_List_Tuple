@@ -1,0 +1,65 @@
+#列表,元组
+names = ["apple","banana","orange","cc","aa","bb","cc","dd","ee","ff","aa","aa"]
+print(names)
+names.append("gg")#追加数据
+names.insert(2,"yy")#插入数据
+names.remove("aa")#删除方法
+del names[4]#删除方法
+names.pop()#删除最后一个
+names.pop(0)#想删除那个就删除那个
+names[0]="HH"#修改数据
+print(names.index("ee"))#查找列表里的数据
+print(names[names.index("ee")])#查找列表里的数据并且打印出来
+print(names[0],names[2])
+print(names[1:3])#取中间两个值，叫切片
+print(names[3])#如果想取最后一个直接就是3
+print(names[-1])#如果不知道列表多长想取最后一个直接就是-1
+print(names[-2:])#如果不知道列表多长想取最后两个直接就是-2:
+print(names[0:3])#如果想取前三个也可以写成下面的方法
+print(names[:3])
+print(names.count("aa"))##统计列表里一共有多少重复信息
+names.sort()#按字符顺序排列按AcsII码排序
+print(names)
+names.reverse()#反转列表，指的是倒序显示
+print(names)
+names2 = ["1","2","3","4","5"]
+names.extend(names2)#扩展列表，合并列表
+print(names,names2)
+
+name3 = names.copy()#拷贝列表
+print(names)#原始列表数据
+print(name3)#复制成功列表数据
+names.clear()#清除列表
+print(names)
+
+
+import copy
+kk = ["a","b",["aa","bb","cc","dd"],"c","d"]#列表里包含列表，子列表
+kks = kk.copy()#这个叫浅copy，当列表里有子列表的时候进行copy被copy的列表第一个修改的列表就不会被copy过来
+#浅copy定义：第二个列表要copy第一列表，第二个列表里的内容只是第一个列表的引用
+#浅copy的三个方法:
+#person=['name',['saving',100]]
+#1\p1=copy.copy(person)
+#2\p2=person[:]
+#3\p3=list(person)
+kk[0]="apple"
+kks[2][0]= "apples"
+print(kk)
+print(kks)
+kks = copy.deepcopy(kk)#这个叫深copy,深copy必须得引用import copy,只有采用这种方式才能真正的copy第一个列表！如果有列表里有百万级数据，如果深copy就又独立占了一份内存空间，深copy这个功能不怎么用。
+print(kks)
+
+
+#列表循环
+vv = ["a","b","c","d","e","f","g","h"]
+print(vv[::3])#这是步长切片，隔一个循环打印0和-1可以省略不写，如果要写是这样print(vv[0:-1:2])
+for i in vv:
+    print(i)
+
+#元组,元组只能查看和切片
+yuanzu=("apple","oracle","mysql","SQLserver","Access","DB2","DB2","DB2","DB2")#元组只能查看、切片、元组也可以叫做只读列表
+#应用场景不可变的模块，比方说connction链接文件
+print(yuanzu[::2])
+print(yuanzu.index("DB2"))#查找元组里的数据
+print(yuanzu[yuanzu.index("DB2")])#查找元组里的数据并且打印出来
+
