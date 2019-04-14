@@ -1,0 +1,13 @@
+#sys模块，也可以称之为库
+
+# import sys                               #如果是自己写的模块可以直接把文件复制到python安装目录里的Lib\site-packages里，然后直接用import导入
+# print(sys.path)                                   #打印环境变量
+# print(sys.argv)
+# print(sys.argv[2])
+
+import os
+# # cmd_res = os.system("dir")               #打印文件目录，执行命令不保存结果
+cmd_res = os.popen("dir").read()           #保存到内存的临时地方
+print("-->",cmd_res)
+
+os.mkdir("new_dir")                        #直接打印
